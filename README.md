@@ -1,8 +1,6 @@
 # Final-project
-
 ## Student Information
-name：113370450 蘇孟孜
----
+**name：113370450 蘇孟孜
 
 ## 研究問題
 睡眠時數是否能顯著預測高中生感到悲傷或絕望的可能性？

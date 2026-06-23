@@ -1,5 +1,93 @@
 # Final-project
 ## Student Information
+* **Name**: 蘇孟孜
+* **Student ID**: 113370450
+
+## Research Question
+Does sleep duration significantly predict the likelihood of feeling sad or hopeless among high school students?
+
+This study uses the Youth Risk Behavior Survey 2007 (YRBS 2007) dataset from the U.S. CDC to investigate whether a significant association exists between adolescent sleep duration and the likelihood of feeling sad or hopeless.
+
+## Data Source
+* **Dataset**: `YRBS_2007.csv`
+* **Source**: U.S. Centers for Disease Control and Prevention (CDC) Youth Risk Behavior Survey (YRBS) 2007.
+
+## Variable Definitions
+
+### Independent Variable
+* **Variable Name**: Sleep
+* **Description**: Average hours of sleep the high school student gets on an average school night.
+* **Coding Scheme**:
+  * 1 = 4 hours or less
+  * 2 = 5 hours
+  * 3 = 6 hours
+  * 4 = 7 hours
+  * 5 = 8 hours
+  * 6 = 9 hours
+  * 7 = 10 hours or more
+* **Data Type**: Ordinal Variable
+
+### Dependent Variable
+* **Variable Name**: Sad_Recoded
+* **Description**: Whether the respondent felt sad or hopeless almost every day for two weeks or more in a row during the past 12 months.
+* **Coding Scheme**:
+  * 1 = Yes
+  * 0 = No
+* **Data Type**: Binary Variable
+
+## Data Cleaning
+This study executed the following data cleaning procedures:
+1. Retained two analysis variables: Sleep and Sad_Recoded.
+2. Removed missing values.
+3. Applied Listwise Deletion.
+
+Final Valid Sample Size:
+**N = 12,106**
+
+## Statistical Methodology
+This study uses Logistic Regression to analyze whether sleep duration significantly predicts the likelihood of high school students feeling sad or hopeless.
+
+### Statistical Hypotheses
+* $H_0$: Sleep duration cannot significantly predict the likelihood of high school students feeling sad or hopeless.
+* $H_1$: Sleep duration can significantly predict the likelihood of high school students feeling sad or hopeless.
+
+Significance Level:
+$\alpha = 0.05$
+
+## Exploratory Data Analysis (EDA)
+The bar chart results show that as sleep duration increases, the percentage of reporting sadness or hopelessness shows a downward trend. Students with shorter sleep duration have a higher percentage of sadness, while students with longer sleep duration show a lower percentage of sadness.
+
+## Logistic Regression Results
+
+| Statistic | Value |
+| :--- | :--- |
+| Sample Size ($N$) | 12,106 |
+| Regression Coefficient ($\beta$) | -0.2475 |
+| Odds Ratio ($OR$) | 0.7807 |
+| p-value | < 0.001 |
+| Pseudo $R^2$ | 0.0187 |
+
+### Interpretation of Results
+The regression coefficient for sleep duration is a negative value ($\beta = -0.2475$), indicating that longer sleep duration is associated with a lower likelihood of feeling sad or hopeless.
+The odds ratio ($OR = 0.7807$) indicates that for each one-level increase in the sleep category, the odds of feeling sad or hopeless decrease by approximately 21.9%.
+
+## Research Conclusion
+The Logistic Regression analysis results show that sleep duration has a significant predictive effect on the likelihood of high school students feeling sad or hopeless ($p < 0.001$).
+Since the p-value is smaller than the significance level $\alpha = 0.05$, the null hypothesis is rejected.
+Overall, students with shorter sleep duration are more likely to experience feelings of sadness or hopelessness, while more sufficient sleep is associated with a lower risk of negative emotions.
+
+## Project Repository
+
+GitHub Repository Link
+
+---
+
+## Presentation Video
+
+YouTube Video Link
+---
+# Final-project
+## Student Information
 name：113370450 蘇孟孜
 
 ## 研究問題
@@ -75,60 +163,3 @@ H₁：睡眠時數能夠顯著預測高中生感到悲傷或絕望的可能性�
 Logistic Regression 分析結果顯示，睡眠時數對高中生感到悲傷或絕望的可能性具有顯著預測效果（p < 0.001）。
 由於 p-value 小於顯著水準 α = 0.05，因此拒絕虛無假設。
 整體而言，睡眠時間較短的學生較容易出現悲傷或絕望感，而較充足的睡眠則與較低的負面情緒風險有關。
-
----
-## Research Question
-Does sleep duration predict the likelihood of feeling sad or hopeless among high school students?
-
-This project uses the YRBS 2007 dataset to examine whether sleep duration is associated with the likelihood of feeling sad or hopeless among high school students.
-
-## Dataset
-Dataset: YRBS_2007.csv
-Source: Centers for Disease Control and Prevention (CDC), Youth Risk Behavior Survey (YRBS), 2007.
-
-## Variables
-### Independent Variable
-Sleep
-* 1 = 4 hours or less
-* 2 = 5 hours
-* 3 = 6 hours
-* 4 = 7 hours
-* 5 = 8 hours
-* 6 = 9 hours
-* 7 = 10 or more hours
-Variable Type: Ordinal Variable
-
-### Dependent Variable
-Sad_Recoded
-* 1 = Yes
-* 0 = No
-Variable Type: Binary Variable
-
-## Final Sample Size
-N = 12,106
-
-## Statistical Method
-Logistic Regression
-
-## Key Results
-| Statistic             | Result  |
-| --------------------- | ------- |
-| Sample Size (N)       | 12,106  |
-| Sleep Coefficient (β) | -0.2475 |
-| Odds Ratio (OR)       | 0.7807  |
-| p-value               | < 0.001 |
-| Pseudo R²             | 0.0187  |
-
-## Conclusion
-The Logistic Regression analysis showed that sleep duration was a significant predictor of feeling sad or hopeless among high school students (p < 0.001).
-Students with shorter sleep durations were more likely to report sadness or hopelessness, whereas longer sleep durations were associated with a lower likelihood of negative emotional outcomes.
-
-## Project Repository
-
-GitHub Repository Link
-
----
-
-## Presentation Video
-
-YouTube Video Link

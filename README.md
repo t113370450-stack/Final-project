@@ -77,14 +77,10 @@ Since the p-value is smaller than the significance level $\alpha = 0.05$, the nu
 Overall, students with shorter sleep duration are more likely to experience feelings of sadness or hopelessness, while more sufficient sleep is associated with a lower risk of negative emotions.
 
 ## Project Repository
-
-GitHub Repository Link
-
----
+https://github.com/t113370450-stack/Final-project/tree/main
 
 ## Presentation Video
-
-YouTube Video Link
+https://youtu.be/pR-4DRYA4W0
 ---
 # Final-project
 ## Student Information
